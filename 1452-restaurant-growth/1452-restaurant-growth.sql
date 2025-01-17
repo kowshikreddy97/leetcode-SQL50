@@ -20,4 +20,3 @@ FROM updated u
 INNER JOIN time_diff t
 ON t.customer_id = u.customer_id AND t.visited_on = u.visited_on
 WHERE DATEDIFF(u.visited_on, t.min_date) = 6
-
